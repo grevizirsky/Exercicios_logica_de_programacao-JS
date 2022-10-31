@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercicio JS Operadores logicos</h1>
+
+    <script>
+        /*Pedir para o usuario digitar dois numeros
+        e mostrar uma mensagem informando se foi aprovado ou nao
+        A nota de corte é 5
+        Contudo, se qualquer uma das notas forem zero, reprova automaticamente*/
+        
+        var n1 = prompt("Digite um numero")
+        n1 = parseFloat(n1)
+
+        var n2 = prompt("Digite outro numero")
+        n2 = parseFloat(n2)
+
+        var media = ((n1 + n2) / 2)
+        
+
+        if (n1 > 0 && n2 > 0 && media > 5){
+            alert("Parabens, voce foi aprovado")
+        } else {
+            alert("Infelizmente voce foi reprovado")
+        }
+
+    </script>
+</body>
+
+</html>
